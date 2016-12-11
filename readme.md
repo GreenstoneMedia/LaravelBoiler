@@ -9,7 +9,12 @@ of this file for resources about any of the components of the project. Feel free
 with any questions about the project. Happy Coding!
 
 The first week project encompassed installing the Laracogs Starter Kit with Bootstrap.
-To get the final result up and running, just clone this project and then run `composer install && yarn && gulp`
+To get the final result up and running, just clone this project and then run 
+
+    composer install 
+    yarn 
+    gulp
+    php artisan migrate --seed
 
 Requirements for this development environment include having the following resources available on your machine. 
 See the resources section at the end of this file for links on installation steps for any of the packages.
@@ -24,6 +29,7 @@ See the resources section at the end of this file for links on installation step
 Create a new laravel project with 
 
     laravel new truck_tracker
+    cd truck_tracker
     composer install
     cp .env.example .env
     php artisan key:generate
@@ -31,7 +37,7 @@ Create a new laravel project with
 Update the .env file and change 
 - The database to whatever database you are using 
 - The url property to the URL of your application
-- Update the mail properties with your [mailtrap.io](mailtrap.io) credentials. If you do not provide an email solution, you should remove
+- Update the mail properties with your [mailtrap.io](http://mailtrap.io) credentials. If you do not provide an email solution, you should remove
 the "active" middleware that comes with this setup in order to use the admin functionality without activating your account
 
 ## Install Laracogs
@@ -107,3 +113,4 @@ your object models.
 - [Homestead](https://laravel.com/docs/5.3/homestead)
 - [Node](http://blog.teamtreehouse.com/install-node-js-npm-mac)
 - [Bootstrap](http://getbootstrap.com/)
+- [Mailtrap.io](http://mailtrap.io)
